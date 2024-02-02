@@ -1,0 +1,122 @@
+body {
+    margin: 0 ; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina los rellenos predeterminados del cuerpo */
+}
+header{
+    background-color: #ffffff;
+    background-image: url(src/assets/banner.gif);
+    background-position: center;
+}
+header img{
+    width: 10rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}   
+header img:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al 110% */
+}
+#navbar{
+    padding-bottom: 2rem;
+    font-size: bolder;
+}
+/* Agrega un borde a todos los elementos <Items /> */
+.nav-item a {
+    background-color: rgb(63, 221, 205);
+    border: 1px solid white; /* Reemplaza 'tuColorDeBorde' con el color deseado */
+    border-radius: 5px; /* Opcional: Agrega esquinas redondeadas */
+}
+.nav-item a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al 110% */
+    filter: brightness(1.5); /* Aumenta el brillo en un 50% */
+    background-color: red;
+}
+
+.nav li a{
+    color: #000000;
+    font-weight: bolder;
+}
+.nav li a:hover{
+    color: #ffffff;
+}
+#cards{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+.card-image{
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.card-image img{
+    width: 100%;
+    height: 450px;
+}
+.card-image a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: rgba(0,0, 0, 0.7);
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.card-image a:hover{
+    opacity: 1;
+}
+.card-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+    margin-top: 0.8rem;
+}
+.card-description{
+    font-size: 0.9rem;
+    text-align: justify;
+}
+footer{
+    background-position: center;
+    width: 100%;
+    display: block;
+    background-color: #d6ebf6;
+    color: #000000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+ul.nav-social{
+    display: table;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.nav-social li{
+    display: inline-block;
+    margin: 0.5rem;
+    text-align: center;
+}
+ul.nav-social li a{
+    display: block;
+    width: 3rem;
+    line-height: 3rem;
+    color: #002c44;
+    background-color: #ffffff;
+    transition: all 0.5s;
+}
+ul.nav-social li a:hover{
+    color: #ffffff;
+    background-color: #ff0000;
+}
+.footer-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.footer-content{
+    font-size: 0.8rem;
+    text-align: justify;
+}
